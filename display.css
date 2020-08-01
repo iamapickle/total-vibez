@@ -1,0 +1,57 @@
+html {
+    background: #f58b57;
+    position: absolute;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#cont-1 {
+    display: inline-grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: -20%;
+    font-size: 2em;
+}
+
+h1 {
+    font: 50px;
+    margin-top: 5px;
+}
+
+h6 {
+    font: 50px;
+    margin-top: 5px;
+    ;
+}
+
+#cont-2 {
+    display: inline-grid;
+    font-size: 2em;
+    margin-top: 10%;
+    margin-bottom: -20%;
+}
+
+#cont-3 {
+    display: inline-grid;
+    margin-left: 2%;
+    margin-right: 10%;
+    font-size: 2em;
+    margin-bottom: -20%;
+    margin-top: 0%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-o-scrollbar {
+    display: none;
+}

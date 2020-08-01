@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Display Page</title>
+        <link rel="stylesheet" href="display.css">
+    </head>
+    <body>
+        <div id="cont-1">
+            <p>If this is being displayed</p>
+        </div>
+        <div id="cont-2">
+            <style>.wavy-text{filter:url('#wavy')}</style><h1 class="wavy-text" id="wavvy">then something has gone</h1>
+                <svg width="200%" height="200%" style="display:none;">
+                <defs>
+                <filter id="wavy" filterUnits="userSpaceOnUse" x="0" y="0">
+                <feTurbulence id="wave-animation" numOctaves="1" seed="1" baseFrequency="0 0"></feTurbulence>
+                <feDisplacementMap scale="15" in="SourceGraphic"></feDisplacementMap>
+                </filter><animate xlink:href="#wave-animation" attributeName="baseFrequency" dur="3s" keyTimes="0;0.5;1" values="0.0 0.04;0.0 0.07;0.0 0.04" repeatCount="indefinite"></animate>
+                </defs>
+                </svg>
+        </div>
+        <div id="cont-3">
+            <p>horribly wrong</p>
+        </div>
+        <script type="text/javascript" src="display.js"></script>
+    </body>
+</html>
